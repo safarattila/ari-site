@@ -2823,3 +2823,18 @@ h3.temu {font-size: 14px;}
 }
 .solution-card-title {white-space: unset;}}
 
+.discovery-left {
+  overflow: clip;       /* hard clip, not scrollable */
+  contain: paint;       /* forces Safari to clip descendants, even blended/transformed ones */
+  isolation: isolate;
+}
+
+.discovery-container {
+  overflow: clip;
+  contain: paint;
+}
+
+html {
+  overflow-x: clip;
+}
+
