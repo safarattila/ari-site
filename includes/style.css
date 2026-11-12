@@ -2898,3 +2898,5 @@ html { overflow-x: clip; }
   max-width: 50%;
   object-fit: contain;
 }
+
+.discovery-cross {display:none;}
