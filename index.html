@@ -10,7 +10,7 @@
    <meta property="og:description" content="Ne hagyd, hogy az AI nélküled beszéljen a márkádról" />
    <meta property="og:site_name" content="Adamic Relevance Index" />
    <meta property="og:type" content="website" />
-   <link rel="stylesheet" href="includes/style.css?39">
+   <link rel="stylesheet" href="includes/style.css?40">
    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="32x32">
    </style>
@@ -789,31 +789,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-(function () {
-  var ua = navigator.userAgent;
-  var isIOS = /iP(hone|od)/.test(ua) ||
-    (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1); // iPad in desktop mode
-  if (!isIOS) return;
-
-  function relayout() {
-    var c = document.querySelector('.cmp-card');
-    if (!c) return;
-    c.style.display = 'none';
-    c.offsetHeight; // force reflow
-    c.style.display = '';
-  }
-
-  if (document.readyState === 'complete') {
-    relayout();
-  } else {
-    addEventListener('load', relayout);
-  }
-
-  // also fix it when the page is restored from the back/forward cache
-  addEventListener('pageshow', function (e) {
-    if (e.persisted) relayout();
-  });
-})();
 
    </script>
