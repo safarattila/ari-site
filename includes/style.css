@@ -2894,7 +2894,6 @@ html { overflow-x: clip; }
 }
 
 .cmp-logo {
-  height: 42px;
   width: auto;
   max-width: 50%;
   object-fit: contain;
