@@ -2251,7 +2251,7 @@ h1 {font-size:30px;}}
         max-width:unset;
       }
 
-        .menu-shadow {position:relative; z-index:401; background: var(--ar-black);
+        .menu-shadow {position:relative; z-index:1001; background: var(--ar-black);
         overflow: hidden;}
         .menu-icon {display:block; top:34px;}
         .sidenav {display:flex; text-align: right; align-items: end;}
@@ -2279,7 +2279,7 @@ h1 {font-size:30px;}}
   .hero-image-container {z-index:300;  }
   .hero-img {margin-top:0; border-top:1px solid white;}
 
-  .open-sidemenu {z-index:399;}
+  .open-sidemenu {z-index:1000;}
 
       .main-pc-logo {
         padding-top:24px;
