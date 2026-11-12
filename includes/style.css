@@ -182,7 +182,9 @@
         }
         
       html {background: white;
-        scroll-behavior: smooth;}
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;}
   
       .menu-shadow {
           background-color: var(--ar-black);
@@ -2513,6 +2515,8 @@ h3.temu {font-size: 14px;}
     .upper {
   overflow:unset;
 }
+
+  .cmp-list li { -webkit-text-size-adjust: 100%; font-size: 16px; }
 
 .discovery-submit-btn {justify-content: center;}
 
