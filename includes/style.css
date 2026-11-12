@@ -2837,5 +2837,26 @@ h3.temu {font-size: 14px;}
 html {
   overflow-x: clip;
 }
-body { border-top: 8px solid greenyellow; }
+body { border-top: 8px solid rgb(47, 210, 255); }
+
+.cmp-card {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.cmp-col,
+.cmp-list,
+.cmp-list li {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.cmp .cmp-list li {
+  grid-template-columns: 11px minmax(0, 1fr);
+}
+
+@media (max-width: 760px) {
+  .cmp-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
 
