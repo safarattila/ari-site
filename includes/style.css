@@ -2838,6 +2838,7 @@ html {
   overflow-x: clip;
 }
 body { border-top: 8px solid rgb(255, 200, 47); }
+.sec-head {display:none!important;}
 
 .cmp-card {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
