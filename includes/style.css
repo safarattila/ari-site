@@ -2813,7 +2813,7 @@ h3.temu {font-size: 14px;}
 @media screen and (max-width: 1260px) {
 .solution-card-title.exeption {
   margin-right: 0;
-}
+}}
 
 @media screen and (max-width: 1190px) {
 .solution-card-body {
@@ -2821,11 +2821,11 @@ h3.temu {font-size: 14px;}
 }
 
 }
-.solution-card-title {white-space: unset;}}
-
+.solution-card-title {white-space: unset;}
+/*
 .discovery-left {
-  overflow: clip;       /* hard clip, not scrollable */
-  contain: paint;       /* forces Safari to clip descendants, even blended/transformed ones */
+  overflow: clip;       
+  contain: paint;     
   isolation: isolate;
 }
 
@@ -2837,8 +2837,8 @@ h3.temu {font-size: 14px;}
 html {
   overflow-x: clip;
 }
-body { border-top: 8px solid rgb(255, 200, 47); }
-.cmp-logo {display:none!important;}
+body { border-top: 8px solid rgb(68, 255, 47); }
+
 
 .cmp-card {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -2860,4 +2860,41 @@ body { border-top: 8px solid rgb(255, 200, 47); }
     grid-template-columns: minmax(0, 1fr);
   }
 }
+*/
+body { border-top: 8px solid rgb(255, 47, 165); }
+.discovery-left {
+  overflow: clip;
+  contain: paint;
+  isolation: isolate;
+}
 
+.discovery-container {
+  overflow: clip;
+  contain: paint;
+}
+
+html { overflow-x: clip; }
+
+.cmp-card {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+@media (max-width: 760px) {
+  .cmp-card { grid-template-columns: minmax(0, 1fr); }
+}
+
+.cmp .cmp-list li {
+  grid-template-columns: 11px minmax(0, 1fr);
+}
+
+/* the logo fix */
+.cmp-col {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.cmp-logo {
+  height: 36px;
+  width: auto;
+  max-width: 50%;
+  object-fit: contain;
+}
