@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Adamic Relevance Index</title>
+   <meta name="description" content="Ne hagyd, hogy az AI nélküled beszéljen a márkádról" />
+   <meta property="og:title" content="Adamic Relevance Index" />
+   <meta property="og:description" content="Ne hagyd, hogy az AI nélküled beszéljen a márkádról" />
+   <meta property="og:site_name" content="Adamic Relevance Index" />
+   <meta property="og:type" content="website" />
+   <link rel="stylesheet" href="includes/style.css?32">
+   <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="32x32">
+   </style>
+</head>
+
+<body>
+   <div class="menu-shadow" id="top">
+      <div class="pc-menu-container">
+         <a href="/" class="main-logo-link">
+            <img src="img/logo.png" class="main-pc-logo" alt="Adamic ARI logo">
+         </a>
+         <nav>
+            <a href="#problema" id="first">Probléma</a>
+            <a href="#megoldas" id="third">Megoldás</a>
+            <a href="#modulok" id="fourth">Modulok</a>
+            <a href="#miert" id="fourth">Miért ARI?</a>
+            <a href="#casestudy" id="fourth">Case Study</a>
+            <a href="#call" id="fourth" class="spec-menu-item">Discovery Call</a>
+         </nav>
+         <div class="menu-icon" onclick="openNav()">
+            <div id="nav-icon1" class="greeee">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="mySidenav" class="sidenav" style="transition: transform 0.4s ease 0s;">
+      <a href="#problema" id="m-c-0" class="animated navlink" onclick="closeNav()">Probléma</a>
+      <a href="#megoldas" id="m-c" class="animated navlink-2 navlink" onclick="closeNav()">Megoldás</a>
+      <a href="#modulok" id="m-c-2" class="animated-3 navlink" onclick="closeNav()">Modulok</a>
+      <a href="#miert" id="m-c-3" class="animated-4 navlink" onclick="closeNav()">Miért ARI?</a>
+      <a href="#casestudy" id="m-c-4" class="animated-5 navlink" onclick="closeNav()">Case Study</a>
+      <a href="#call" id="m-c-5" class="animated-6 navlink last-item" onclick="closeNav()">Discovery Call</a>
+   </div>
+   <script>
+      /* document.addEventListener("DOMContentLoaded", function() {
+            var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+   
+            if ("IntersectionObserver" in window) {
+               let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+                  entries.forEach(function(entry) {
+                     if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        lazyBackgroundObserver.unobserve(entry.target);
+                     }
+                  });
+               });
+   
+               lazyBackgrounds.forEach(function(lazyBackground) {
+                  lazyBackgroundObserver.observe(lazyBackground);
+               });
+            }
+         });
+   */
+   </script>
+
+   <section class="hero">
+      <div class="hero-text">
+         <div class="upper">
+            <div class="text-box white">
+               <h1>Ne hagyd, hogy az AI nélküled beszéljen a márkádról</h1>
+               <p class="genp">Az ARI nem egy újabb AI visibility tool. Prémium stratégiai tanácsadás, amely méri és
+                  fejleszti, hogyan jelenik meg a márkád a ChatGPT, Claude és más AI rendszerek válaszában.</p>
+               <div class="top-button">
+                  <button class="cta-button">Foglalj Discovery Callt-t <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentColor"><path d="M627.33-427.67H132v-104.66h495.33l-222-222L480-828.67 828.67-480 480-132l-74.67-73.67 222-222Z"/></svg>
+  <path d="M4 12h16m-7-7 7 7-7 7" />
+</svg>
+</button>
+                  <button class="white gradient-text">Hogyan működik?</button>
+               </div>
+            </div>
+         </div>
+         <div class="lower">
+            <div class="three-text-blck-container">
+                <div class="left-text">3 rétegű analízis</div>
+               <div class="central-text">90 napos roadmap</div>
+                <div class="right-text">Havi monitoring</div>
+            </div>
+         </div>
+      </div>
+      <div class="hero-image-container">
+      <img src="img/running-2.jpg" alt="Running" class="hero-img"></img>
+      </div>
+
+   </section>
+
+
+   <section class="four-pics">
+      <div class="section-inner">
+         <hgroup class="title-elment">
+            <P>A probléma</P>
+            <h2>A marketing kontrollvesztése az AI korában</h2>
+         </hgroup>
+         <div class="four-boxes">
+            <div class="box-one">
+               <span class="boxlogo"><img src="img/question.png" alt="question" /></span>
+               <h3>Nem tudod, mit mond a ChatGPT a márkádról</h3>
+               <p>Az AI rendszerek milliós felhasználónak adnak válaszokat, formálva a döntéshozók véleményét anélkül,
+                  hogy a marketing csapatnak rálátása lenne erre a csatornára.</p>
+            </div>
+            <div class="box-one">
+               <span class="boxlogo"><img src="img/crown.png" alt="crown"></img></span>
+               <h3>Az AI hallucinációk torzítják a márkaképed</h3>
+               <p>A nagy nyelvi modellek gyakran téves információkat, elavult pozicionálást vagy nem létező
+                  tulajdonságokat társítanak a márkádhoz valós tényként közölve.</p>
+            </div>
+            <div class="box-one third">
+               <span class="boxlogo"><img src="img/turtle.png" alt="turtle"></img></span>
+               <h3>Versenytársaid már alakítják az AI percepcióját</h3>
+               <p>Amikor egy potenciális ügyfél ajánlást vagy összehasonlítást kér a kategóriádban, a proaktív
+                  versenytársak dominálják az AI válaszok első helyeit.</p>
+            </div>
+            <div class="box-one fourth">
+               <img src="img/fourth-pic.jpg" alt="light" loading="lazy" />
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+
+
+<section class="solution" id="megoldas">
+
+   <div class="solution-header">
+      <p class="solution-label">A Megoldás</p>
+      <h2 class="solution-heading">Hogyan működik az ARI?</h2>
+   </div>
+
+   <div class="solution-row solution-row--top">
+
+      <article class="solution-card solution-card--01">
+         <div class="solution-card-media" style="background-image:url('img/abstract-01.jpg')">
+            <span class="solution-card-number" aria-label="01">
+               <span class="solution-card-number-zero" aria-hidden="true">0</span><span aria-hidden="true">1</span>
+            </span>
+         </div>
+         <div class="solution-card-body">
+            <h3 class="solution-card-title">Mérés és Audit</h3>
+            <p class="solution-card-desc">3 rétegű analízis a márkád jelenlegi AI-megjelenéséről és piaci relevanciájáról.</p>
+         </div>
+      </article>
+
+      <article class="solution-card solution-card--02">
+         <div class="solution-card-media" style="background-image:url('img/abstract-02.jpg')">
+            <span class="solution-card-number" aria-label="02">
+               <span class="solution-card-number-zero" aria-hidden="true">0</span><span aria-hidden="true">2</span>
+            </span>
+         </div>
+         <div class="solution-card-body">
+            <h3 class="solution-card-title">90 napos Stratégia</h3>
+            <p class="solution-card-desc">Konkrét roadmap és playbookok a megvalósításhoz, pozicionáláshoz és javításhoz.</p>
+         </div>
+      </article>
+
+   </div>
+
+   <div class="solution-row solution-row--bottom">
+
+      <div class="solution-feature" style="background-image:url('img/large-abstract-image-04.jpg')">
+      </div>
+
+      <div class="solution-col-b">
+
+         <article class="solution-card solution-card--03">
+            <div class="solution-card-media" style="background-image:url('img/abstract-03.jpg')">
+               <span class="solution-card-number" aria-label="03">
+                  <span class="solution-card-number-zero" aria-hidden="true">0</span><span aria-hidden="true">3</span>
+               </span>
+            </div>
+            <div class="solution-card-body">
+               <h3 class="solution-card-title exeption">Folyamatos Monitoring</h3>
+               <p class="solution-card-desc">Havi követés és optimalizálás a tartós, mérhető eredményekért és stabilitásért.</p>
+            </div>
+         </article>
+
+         <div class="solution-cta-wrapper">
+                    <p class="solution-feature-text">
+            <span class="solid">Convinced</span> <span class="ghost">already?</span>
+         </p>
+            <button class="solution-cta-button" type="button">
+               Foglalj Discovery Call-t
+               <svg width="18" height="18" viewBox="0 -960 960 960" fill="currentColor" aria-hidden="true">
+                  <path d="M627.33-427.67H132v-104.66h495.33l-222-222L480-828.67 828.67-480 480-132l-74.67-73.67 222-222Z"/>
+               </svg>
+            </button>
+         </div>
+
+      </div>
+
+   </div>
+
+   <div class="solution-footer" aria-hidden="true"></div>
+
+</section>
+
+
+
+
+
+
+<section class="modules" id="modulok">
+   <div class="modules-header">
+      <div class="modules-label-cell">
+         <p class="modules-label">Modulok</p>
+      </div>
+      <h2 class="modules-heading">Mit kapsz az ARI szolgáltatással?</h2>
+   </div>
+
+   <div class="modules-grid">
+
+      <article class="module-card module-card--audit">
+         <div class="module">
+         <div class="module-top">
+            <span class="module-kicker">modul</span>
+            <span class="module-number" aria-label="01">
+               <span class="module-number-zero" aria-hidden="true">0</span>
+               <span class="module-number-digit" aria-hidden="true">1</span>
+            </span>
+         </div>
+         <h3 class="module-title">Audit</h3>
+         <ul class="module-list">
+            <li>Benchmarking</li>
+            <li>AI válasz analízis</li>
+            <li>Emberi lenyomat mérés</li>
+         </ul>
+         </div>
+      </article>
+
+      <article class="module-card module-card--strategy">
+         <div class="module">
+         <div class="module-top">
+            <span class="module-kicker">modul</span>
+            <span class="module-number" aria-label="02">
+               <span class="module-number-zero" aria-hidden="true">0</span>
+               <span class="module-number-digit" aria-hidden="true">2</span>
+            </span>
+         </div>
+         <h3 class="module-title">Stratégia</h3>
+         <ul class="module-list">
+            <li>90 napos roadmap</li>
+            <li>Ügynökségi briefek</li>
+            <li>Playbookok</li>
+         </ul>
+         </div>
+      </article>
+
+      <article class="module-card module-card--monitoring">
+         <div class="module">
+         <div class="module-top">
+            <span class="module-kicker">modul</span>
+            <span class="module-number" aria-label="03">
+               <span class="module-number-zero" aria-hidden="true">0</span>
+               <span class="module-number-digit" aria-hidden="true">3</span>
+            </span>
+         </div>
+         <h3 class="module-title">Monitoring</h3>
+         <ul class="module-list">
+            <li>Havi tracking</li>
+            <li>Változás elemzés</li>
+            <li>MRR tanácsadás</li>
+         </ul>
+         </div>
+      </article>
+
+   </div>
+
+   <div class="modules-footer" aria-hidden="true"></div>
+</section>
+
+
+
+
+   <script>
+      /*  function animateValue(obj, start, end, duration) {
+              let startTimestamp = null;
+              const step = (timestamp) => {
+                 if (!startTimestamp) startTimestamp = timestamp;
+                 const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                 obj.innerHTML = Math.floor(progress * (end - start) + start);
+                 if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                 }
+              };
+              window.requestAnimationFrame(step);
+           }
+           const firstnum = document.querySelector("#value")
+     
+           const secondnum = document.getElementById("value-two");
+           const thirdnum = document.getElementById("value-three");
+           const animObject = document.querySelector("#value")
+           const animObjectTwo = document.querySelector("#value-two")
+           const animObjectThree = document.querySelector("#value-three")
+           const animObjectFour = document.querySelector(".demmler-hero")
+     
+           const callback = (entries, observer) => {
+              entries.forEach((entry) => {
+                 if (entry.isIntersecting) {
+                    animateValue(firstnum, 0, 35, 1000);
+                    observer.unobserve(entry.target)
+                 }
+              })
+           }
+           const callbacktwo = (entries, observer) => {
+              entries.forEach((entry) => {
+                 if (entry.isIntersecting) {
+                    animateValue(secondnum, 0, 377, 1000);
+                    observer.unobserve(entry.target)
+                 }
+              })
+           }
+           const callbackthree = (entries, observer) => {
+              entries.forEach((entry) => {
+                 if (entry.isIntersecting) {
+                    animateValue(thirdnum, 0, 4, 1000);
+                    entry.target.classList.add('active');
+                
+                    observer.unobserve(entry.target)
+                 }
+              })
+           }
+     
+           const callbackfour = (entries, observer) => {
+              entries.forEach((entry) => {
+                 if (entry.isIntersecting) {
+                    entry.target.classList.add('added');
+                    observer.unobserve(entry.target)
+                 }
+              })
+           }
+     
+           let observerOptions = {
+              rootMargin: '0px',
+              threshold: 1
+           }
+     
+           var observer = new IntersectionObserver(observerCallback, observerOptions);
+     
+     
+           function observerCallback(entries, observer) {
+              entries.forEach(entry => {
+                 if (entry.isIntersecting) {
+                    entry.target.classList.add('lineonthis');
+                    observer.unobserve(entry.target)
+                 }
+              });
+           };
+     
+           let target = '.lines';
+           document.querySelectorAll(target).forEach((i) => {
+              if (i) {
+                 observer.observe(i);
+              }
+           });
+     
+           const options = {
+              root: null,
+              threshold: .56
+           }
+     
+           const myObserver = new IntersectionObserver(callback, options)
+           const myObserverTwo = new IntersectionObserver(callbacktwo, options)
+           const myObserverThree = new IntersectionObserver(callbackthree, options)
+           const myObserverFour = new IntersectionObserver(callbackfour, options)
+           const myObserverFive = new IntersectionObserver(callbackfour, options)
+           myObserver.observe(animObject);
+           myObserverTwo.observe(animObjectTwo);
+           myObserverThree.observe(animObjectThree);
+           myObserverFour.observe(animObjectFour);*/
+
+      /* const lowerEl = document.querySelector('.hero-img');
+       const upperEl = document.querySelector('.spec-menu-item');
+ 
+       function syncGap(upperEl, lowerEl, overlap = 0) {
+   const upperRect = upperEl.getBoundingClientRect();
+   const lowerRect = lowerEl.getBoundingClientRect();
+   const gap = lowerRect.top - upperRect.bottom;
+   lowerEl.style.marginTop = `${-gap - overlap}px`; 
+ }
+ 
+ const ro = new ResizeObserver(() => syncGap(upperEl, lowerEl));
+ ro.observe(upperEl.parentElement);
+ ro.observe(lowerEl.parentElement);
+ 
+ syncGap(upperEl, lowerEl); 
+ window.addEventListener('load', () => syncGap(upperEl, lowerEl)); */
+
+      function openNav() {
+         const navLinks = document.querySelectorAll('.navlink');
+         const dropdownButton = document.querySelectorAll('.dropdown-btn');
+         const dropdownContainer = document.querySelectorAll('.dropdown-container');
+         const navIcon = document.querySelector("#nav-icon1");
+         const mySidenav = document.querySelector("#mySidenav");
+         navIcon.classList.toggle("open");
+         mySidenav.classList.toggle("open-sidemenu");
+         navLinks.forEach(element => {
+            element.classList.toggle('fadeInDown')
+         });
+      }
+
+      function closeNav() {
+         const navLinks = document.querySelectorAll('.navlink');
+         const navIcon = document.querySelector("#nav-icon1");
+         const mySidenav = document.querySelector("#mySidenav");
+         navIcon.classList.remove("open");
+         mySidenav.classList.remove("open-sidemenu");
+         navLinks.forEach(element => {
+            element.classList.remove('fadeInDown')
+         });
+      }
+
+(function () {
+  const heroImg = document.querySelector('.hero-img');
+  const nav = document.querySelector('nav');
+  if (!heroImg || !nav) return;
+
+  let scheduled = false;
+
+  function updateDistance() {
+    // Temporarily clear so the line itself can't influence the measurement
+    document.documentElement.style.setProperty('--distance', '0px');
+
+    const heroRect = heroImg.getBoundingClientRect();
+    const navRect = nav.getBoundingClientRect();
+    const distanceX = Math.round(Math.abs(navRect.left - heroRect.left));
+
+    document.documentElement.style.setProperty('--distance', `${distanceX}px`);
+    scheduled = false;
+  }
+
+  function schedule() {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(updateDistance);
+  }
+
+  const ro = new ResizeObserver(schedule);
+  ro.observe(heroImg);
+  ro.observe(nav);
+
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(schedule);
+  }
+  window.addEventListener('load', schedule);
+
+  schedule();
+})();
+   </script>
