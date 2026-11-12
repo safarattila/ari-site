@@ -1744,7 +1744,7 @@ to { rotate: 1turn; }
     .cmp-head h3 { margin: 0; font-size: clamp(26px, 1.8vw, 34px); font-weight: 900; 
     padding-bottom: 0;}
     .cmp-head span { font-size: clamp(14px, 0.95vw, 18px); font-weight: 400; }
-    .cmp-logo { height: 70%; width: auto; display: block; }
+    .cmp-logo { height: 48px; width: 102px; display: block; }
 
     .cmp-list {
       list-style: none; margin: 0; padding: 0 clamp(24px, 3vw, 60px) 0 clamp(40px, 8.9vw, 170px);
@@ -2025,6 +2025,7 @@ to { rotate: 1turn; }
   .discovery-container {
     margin-left:auto;
     width: 100%;}
+    .cmp-logo {width:90px; height:42px;}
     .right-top,.right-bottom {padding-left: clamp(60px, 6.5vw, 192px);}
     .nav-secondary {white-space: nowrap;}
  
@@ -2861,7 +2862,7 @@ body { border-top: 8px solid rgb(68, 255, 47); }
   }
 }
 */
-body { border-top: 8px solid rgb(255, 47, 165); }
+body { border-top: 8px solid rgb(47, 130, 255); }
 .discovery-left {
   overflow: clip;
   contain: paint;
@@ -2893,7 +2894,7 @@ html { overflow-x: clip; }
 }
 
 .cmp-logo {
-  height: 36px;
+  height: 42px;
   width: auto;
   max-width: 50%;
   object-fit: contain;
