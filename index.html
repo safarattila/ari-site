@@ -788,4 +788,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+(function () {
+  var ua = navigator.userAgent;
+  var isIOS = /iP(hone|od)/.test(ua) ||
+    (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1); // iPad in desktop mode
+  if (!isIOS) return;
+
+  function relayout() {
+    var c = document.querySelector('.cmp-card');
+    if (!c) return;
+    c.style.display = 'none';
+    c.offsetHeight; // force reflow
+    c.style.display = '';
+  }
+
+  if (document.readyState === 'complete') {
+    relayout();
+  } else {
+    addEventListener('load', relayout);
+  }
+
+  // also fix it when the page is restored from the back/forward cache
+  addEventListener('pageshow', function (e) {
+    if (e.persisted) relayout();
+  });
+})();
+
    </script>
