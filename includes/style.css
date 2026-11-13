@@ -2182,6 +2182,8 @@ margin-bottom: clamp(100px, 7.81vw, 150px);
 
 }
 
+ @media screen and (max-width:1240px) {
+ .cmp-head h3 {font-size:22px;}}
       
     @media screen and (max-width:1199px) {
       .tagline, .brand-name {display:none;}
