@@ -28,7 +28,7 @@
             <a href="#megoldas" id="third">Megoldás</a>
             <a href="#modulok" id="fourth">Modulok</a>
             <a href="#miert" id="fourth">Miért ARI?</a>
-            <a href="#casestudy" id="fourth">Case Study</a>
+        <!--<a href="#casestudy" id="fourth">Case Study</a>-->    
             <a href="#call" id="fourth" class="spec-menu-item">Discovery Call</a>
          </nav>
          <div class="menu-icon" onclick="openNav()">
@@ -45,8 +45,8 @@
       <a href="#megoldas" id="m-c" class="animated navlink-2 navlink" onclick="closeNav()">Megoldás</a>
       <a href="#modulok" id="m-c-2" class="animated-3 navlink" onclick="closeNav()">Modulok</a>
       <a href="#miert" id="m-c-3" class="animated-4 navlink" onclick="closeNav()">Miért ARI?</a>
-      <a href="#casestudy" id="m-c-4" class="animated-5 navlink" onclick="closeNav()">Case Study</a>
-      <a href="#call" id="m-c-5" class="animated-6 navlink last-item" onclick="closeNav()">Discovery Call</a>
+    <!--  <a href="#casestudy" id="m-c-4" class="animated-5 navlink" onclick="closeNav()">Case Study</a>-->
+      <a href="#call" id="m-c-5" class="animated-5 navlink last-item" onclick="closeNav()">Discovery Call</a>
    </div>
    <script>
       /* document.addEventListener("DOMContentLoaded", function() {
@@ -104,7 +104,7 @@
 <div id="blur" aria-hidden="true"></div>
 </span>
    <section class="four-pics">
-      <div class="section-inner">
+      <div class="section-inner" id="problema">
          <hgroup class="title-elment">
             <P>A probléma</P>
             <h2>A marketing kontrollvesztése az AI korában</h2>
@@ -150,7 +150,7 @@
    <div class="solution-row solution-row--top">
 
       <article class="solution-card solution-card--01">
-         <div class="solution-card-media" style="background-image:url('img/abstract-01.jpg')">
+         <div class="solution-card-media" data-bg="img/abstract-01.jpg">
             <span class="solution-card-number" aria-label="01">
                <span class="solution-card-number-zero" aria-hidden="true">0</span><span aria-hidden="true">1</span>
             </span>
@@ -162,7 +162,7 @@
       </article>
 
       <article class="solution-card solution-card--02">
-         <div class="solution-card-media" style="background-image:url('img/abstract-02.jpg')">
+         <div class="solution-card-media" data-bg="img/abstract-02.jpg">
             <span class="solution-card-number" aria-label="02">
                <span class="solution-card-number-zero" aria-hidden="true">0</span><span aria-hidden="true">2</span>
             </span>
@@ -177,7 +177,7 @@
 
    <div class="solution-row solution-row--bottom">
 
-      <div class="solution-feature" style="background-image:url('img/large-abstract-image-04.jpg')">
+      <div class="solution-feature" data-bg="img/large-abstract-image-04.jpg">
          <span class="mobile-solutions">
             <p class="solution-feature-text">
                <span class="solid">Sikerült</span> <span class="ghost">meggyőznünk?</span>
@@ -188,7 +188,7 @@
       <div class="solution-col-b">
 
          <article class="solution-card solution-card--03">
-            <div class="solution-card-media" style="background-image:url('img/abstract-03.jpg')">
+            <div class="solution-card-media" data-bg="img/abstract-03.jpg">
                <span class="solution-card-number" aria-label="03">
                   <span class="solution-card-number-zero" aria-hidden="true">0</span><span aria-hidden="true">3</span>
                </span>
@@ -237,7 +237,7 @@
 
    <div class="modules-grid">
 
-      <article class="module-card module-card--audit">
+      <article class="module-card module-card--audit" data-bg="img/first-bg-image.jpg">
          <div class="module">
          <div class="module-top">
             <span class="module-kicker">modul</span>
@@ -255,7 +255,7 @@
          </div>
       </article>
 
-      <article class="module-card module-card--strategy">
+      <article class="module-card module-card--strategy" data-bg="img/second-bg-image.jpg">
          <div class="module">
          <div class="module-top">
             <span class="module-kicker">modul</span>
@@ -273,7 +273,7 @@
          </div>
       </article>
 
-      <article class="module-card module-card--monitoring">
+      <article class="module-card module-card--monitoring" data-bg="img/third-bg-image.jpg">
          <div class="module">
          <div class="module-top">
             <span class="module-kicker">modul</span>
@@ -298,7 +298,7 @@
 <section id="miertazari" class="cmp">
 
   <div class="cmp-inner">
-    <div class="cmp-titles">
+    <div class="cmp-titles" id="miert">
       <h2 class="cmp-title cmp-title--left">Miért nem egy olcsó automatizált tool?</h2>
       <h2 class="cmp-title cmp-title--right">Miért az ARI?</h2>
     </div>
@@ -331,11 +331,11 @@
 </section>
 
 
-<!-- DISCOVERY CALL SECTION -->
+
 <section class="discovery-section" id="call">
    <div class="discovery-container">
       
-      <!-- Left Column: Discovery Call Form -->
+
       <div class="discovery-left">
          <div class="discovery-orb-bg" aria-hidden="true">
             <img src="img/blue-orb.jpg" alt="" class="discovery-orb-img" loading="lazy">
@@ -415,16 +415,18 @@
       <!-- Top Section -->
       <div class="right-top">
         <ul class="nav-main">
-          <li><a href="#megoldas">Megoldás</a></li>
+         <li><a href="#problema" id="prob">Probléma</a></li>
+          <li><a href="#megoldas" id="megs">Megoldás</a></li>
           <li><a href="#modulok">Modulok</a></li>
        <!--<li><a href="#casestudy">Case Study</a></li>-->   
           <li><a href="#miert">Miért ARI?</a></li>
         </ul>
         
         <ul class="nav-secondary">
+            <li><a href="https://adamic.hu/" target="_blank">Rólunk</a></li>
           <li><a href="https://adamic.hu/adatkezelesi-tajekoztato.pdf" target="_blank">Adatvédelem</a></li>
-        <!-- <li><a href="#">ÁSZF</a></li>
-          <li><a href="#">Impresszum</a></li>--> 
+      
+      <!--    <li><a href="#">Impresszum</a></li>--> 
       
         </ul>
       </div>
@@ -798,22 +800,128 @@ document.querySelectorAll('.solution-cta-button.mobile-solutions, .solution-cta-
       });
   });
 
-  document.querySelectorAll('.white.gradient-text').forEach(function(element) {
-      element.addEventListener('click', function(e) {
-          e.preventDefault();
-          const targetSection = document.getElementById('megoldas');
-          if (targetSection) {
-              // Get the element's position relative to the viewport
-              const elementPosition = targetSection.getBoundingClientRect().top;
-              // Add current scroll position and subtract 10px for the offset
-              const offsetPosition = elementPosition + window.pageYOffset - 10;
+ function setupSmoothScroll(anchorSelector, targetId, offset = 10) {
+    document.querySelectorAll(anchorSelector).forEach(function(element) {
+        element.addEventListener('click', function(e) {
+            // Prevent default jump only if the element has an href attribute
+            if (element.hasAttribute('href')) {
+                e.preventDefault();
+            }
+            
+            const targetSection = document.getElementById(targetId);
+            
+            if (targetSection) {
+                const elementPosition = targetSection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-              window.scrollTo({
-                  top: offsetPosition,
-                  behavior: 'smooth'
-              });
-          }
-      });
-  });
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+setupSmoothScroll('.white.gradient-text', 'megoldas', 15);
+setupSmoothScroll('#first', 'problema', 15);
+setupSmoothScroll('#m-c-0', 'problema', 15);
+setupSmoothScroll('#third', 'megoldas', 15);
+setupSmoothScroll('#m-c', 'megoldas', 15);
+setupSmoothScroll('#megs', 'megoldas', 15);
+setupSmoothScroll('#prob', 'problema', 15);
+
+
+
+(function () {
+  'use strict';
+ 
+  var config = Object.assign({
+    selector: '[data-bg]',
+    rootMargin: '300px 0px',          
+    loadedClass: 'lazy-bg-loaded',
+    errorClass: 'lazy-bg-error',
+   
+    rescueInline: false
+  }, window.lazyBgConfig || {});
+ 
+  var URL_RE = /url\(\s*(['"]?)(.*?)\1\s*\)/i;
+  var hasIO = 'IntersectionObserver' in window;
+ 
+  var io = hasIO ? new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        io.unobserve(entry.target);
+        reveal(entry.target);
+      }
+    });
+  }, { rootMargin: config.rootMargin }) : null;
+ 
+
+  function toCss(value) {
+    value = value.trim();
+    if (/url\(|image-set\(|gradient\(/i.test(value)) return value;
+    return 'url("' + value.replace(/"/g, '\\"') + '")';
+  }
+ 
+  function reveal(el) {
+    var raw = el.getAttribute('data-bg');
+    if (!raw) return;
+    el.removeAttribute('data-bg');
+ 
+    var css = toCss(raw);
+    var match = URL_RE.exec(css);
+ 
+    function apply() {
+      el.style.backgroundImage = css;
+      el.classList.add(config.loadedClass);
+    }
+ 
+    if (!match) return apply(); // e.g. gradient only, nothing to download
+ 
+    // Preload first so the background appears only once it's ready (no half-painted image).
+    var img = new Image();
+    img.onload = apply;
+    img.onerror = function () { el.classList.add(config.errorClass); };
+    img.src = match[2];
+  }
+ 
+  function watch(el) {
+    if (io) io.observe(el);
+    else reveal(el); // very old browsers: just load immediately
+  }
+ 
+  function rescue(el) {
+    if (!el.style || el.hasAttribute('data-bg')) return;
+    var bg = el.style.backgroundImage;
+    if (bg && URL_RE.test(bg)) {
+      el.setAttribute('data-bg', bg);
+      el.style.backgroundImage = '';
+    }
+  }
+ 
+  function scan(root) {
+    if (root.nodeType !== 1 && root.nodeType !== 9) return;
+    if (config.rescueInline && root.nodeType === 1) {
+      rescue(root);
+      root.querySelectorAll('[style*="background"]').forEach(rescue);
+    }
+    if (root.nodeType === 1 && root.matches(config.selector)) watch(root);
+    root.querySelectorAll(config.selector).forEach(watch);
+  }
+ 
+  // Pick up elements added later (SPAs, injected HTML, infinite scroll, ...)
+  new MutationObserver(function (mutations) {
+    mutations.forEach(function (m) {
+      m.addedNodes.forEach(scan);
+    });
+  }).observe(document.documentElement, { childList: true, subtree: true });
+ 
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () { scan(document); });
+  } else {
+    scan(document);
+  }
+})();
 
    </script>
